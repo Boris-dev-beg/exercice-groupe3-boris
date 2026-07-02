@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  font-weight: 500;
+  font-size: medium;
+}
+body {
+  background-color: #f6f7f8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* ! Game Style */
+section.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 70%;
+  height: auto;
+  background: #9edbc9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgb(156, 156, 156);
+}
+section.app-container h1.app-title {
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 45px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ? Question style */
+section.app-container .questions-container {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.questions-container .element {
+  width: 100%;
+  border: solid 3px #999999;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: black;
+  display: flex;
+  gap: 5px;
+  background-color: #3ecfbc;
+  box-shadow: 0 2px 5px  #7bb6ae;
+  user-select: none;
+}
+.element h1,
+.element p {
+  font-weight: 600;
+  font-size: 20px;
+}
+.questions-container .question.element {
+  width: 80%;
+  justify-content: center;
+  border-radius: 10px;
+}
+.questions-container .question.element h1,
+.question.element p {
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: solid 2px #999999;
+    padding-top: 10px;
+}
+.buttons button{
+    background: #7bb6ae;
+    border:  solid 2px #999999;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 800;
+}
+/* ? Result */
+.result-container{
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+.result-container .msg{
+    font-weight: 700;
+    font-size: 20px;
+}
+.result-container .result{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.result-container .result h1{
+    font-size: 20px;
+}
+.result .correct{
+    color: green;
+}
+.result .incorrect{
+    color: red;
+}
+.result-container button{
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
