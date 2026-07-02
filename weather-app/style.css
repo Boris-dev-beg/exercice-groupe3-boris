@@ -1,0 +1,198 @@
+/* ! GLOBAL STYLE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ! APP STYLE */
+section.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 18px;
+  background: #f1f1f1c0;
+  box-shadow: 0 0 16px 0.5px gray;
+}
+
+/* ! Header */
+section.app-container div.app-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  padding-block: 8px;
+}
+div.app-header h1.app-title {
+  font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+}
+div.app-header form.app-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form.app-form div.text-zone{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+input.form-input {
+  width: 100%;
+  border: solid 1px gray;
+  border-radius: 6px;
+  padding: 10px 7px;
+  color: #000000;
+}
+input.form-input:focus {
+  outline: none;
+}
+form.app-form button {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 13px 15px;
+  text-align: center;
+  text-transform: capitalize;
+  width: fit-content;
+  text-wrap: nowrap;
+  font-weight: 700;
+}
+form.app-form div.container-units {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+}
+div.container-units span.container-unit {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 20%;
+  justify-content: center;
+}
+span.container-unit label {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* ! Body */
+section.app-container div.app-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 34px;
+  border: solid 0.5px gray;
+  border-radius: 3px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* ? ForeCast Data */
+div.app-body span.forecast-container{
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+div.app-body h2.title {
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 12px;
+}
+div.app-body span.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  gap: 6px;
+  padding-block: 5px;
+}
+span.container span {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  align-items: flex-start;
+}
+span h2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+div.image-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+div.image-container h2 {
+  font-weight: 500;
+  font-size: 20px;
+  width: 50%;
+}
+div.image-container span {
+  width: 50%;
+  position: relative;
+}
+
+/* ? Other screen */
+span.message-screen, span.error-screen{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+}
+span.message-screen h1, span.error-screen h1{
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+span.message-screen p, span.error-screen p{
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ? Message screen */
+div.app-body span.message-screen{
+  display: flex;
+  color: gray;
+}
+/* ? Error screen */
+div.app-body span.error-screen{
+  display: none;
+  color: rgb(230, 48, 48);
+}
+

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body id="body">
+    <section class="app-container">
+      <!-- ! Header -->
+      <div class="app-header">
+        <h1 class="app-title">Check the Weather Forecast</h1>
+        <form action="" class="app-form" id="app-form" method="post">
+          <div class="text-zone">
+            <input
+              type="text"
+              class="form-input"
+              name="city_name"
+              id="city_name"
+              placeholder="City name (ex: Douala...)"
+            />
+            <button type="submit">Check !</button>
+          </div>
+          <div class="container-units">
+            <span class="container-unit">
+              <input
+                type="radio"
+                name="unit"
+                value="celsuis"
+                id="celsuis"
+                checked
+              />
+              <label for="celsuis">Celsius</label>
+            </span>
+            <span class="container-unit">
+              <input type="radio" name="unit" id="farenheit" value="farenheit" />
+              <label for="farenheit">Farenheit</label>
+            </span>
+          </div>
+        </form>
+      </div>
+      <!-- ! Body -->
+      <div class="app-body">
+        <!-- ! Forecast Data -->
+        <span class="forecast-container" id="forecast-container">
+          
+        </span>
+        <!-- ! Message screen -->
+        <span class="message-screen" id="message-screen">
+          <h1>Nothing to show !</h1>
+          <p>Please enter the city name to show the Weather Forecast.</p>
+        </span>
+        <!-- ! Error Screen -->
+        <span class="error-screen" id="error-screen">
+          <h1>Oops, Something went wrong !</h1>
+          <p>Please check the internet connection or the city name.</p>
+        </span>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
