@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #f7f4f4;
+}
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+  width: 100%;
+  border-bottom: solid 0.5px gray;
+}
+.header h1 {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 30px;
+  font-style: italic;
+}
+
+main.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  padding: 15px;
+}
+
+.main .article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  box-shadow: 0 0 15px .5px #eeeded;
+  border-radius: 8px;
+  border: solid 0.5px #e0e0e0;
+  background-color: #fff;
+}
+.article h2 {
+  font-size: 28px;
+  width: 100%;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: solid 2px black;
+}
+.article p {
+  color: gray;
+  padding: 5px;
+  border-bottom: solid 1px gray;
+}
+.article a{
+    font-weight: 400;
+    font-size: 18px;
+    color: gray;
+    width: fit-content;
+    margin-left: auto;
+    padding: 4px 10px;
+}
+.article a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}

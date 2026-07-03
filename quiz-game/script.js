@@ -7,6 +7,29 @@ const TabQuestions = [
     answers: [
       {
         id: 1,
+        msg: "answer 1",
+      },
+      {
+        id: 2,
+        msg: "answer 2",
+      },
+      {
+        id: 3,
+        msg: "answer 3",
+      },
+      {
+        id: 4,
+        msg: "answer 4",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Question 2",
+    correct_answer: 3,
+    answers: [
+      {
+        id: 1,
         msg: "response 1",
       },
       {
@@ -24,48 +47,25 @@ const TabQuestions = [
     ],
   },
   {
-    id: 2,
-    title: "Question 2",
-    correct_answer: 3,
-    answers: [
-      {
-        id: 1,
-        msg: " 1",
-      },
-      {
-        id: 2,
-        msg: " 2",
-      },
-      {
-        id: 3,
-        msg: " 3",
-      },
-      {
-        id: 4,
-        msg: " 4",
-      },
-    ],
-  },
-  {
     id: 3,
     title: "Question 3",
     correct_answer: 2,
     answers: [
       {
         id: 1,
-        msg: "response1",
+        msg: "answer 1",
       },
       {
         id: 2,
-        msg: "respons2",
+        msg: "answer 2",
       },
       {
         id: 3,
-        msg: "respons3",
+        msg: "answer 3",
       },
       {
         id: 4,
-        msg: "respons4",
+        msg: "answer 4",
       },
     ],
   },

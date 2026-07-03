@@ -5,6 +5,7 @@ const foreCastData = {
   feels_like: "",
   min: "",
   max: "",
+  icon: '',
   clouds_type: "",
   unit: "celsius",
 };
@@ -31,6 +32,15 @@ const fetchData = async (city_name) => {
     console.error(error);
   }
 };
+const fetchimage = async (icon) => {
+  try {
+    const url = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    const response = await fetch(url);
+    return response.blob();
+  } catch (error) {
+    console.error("Error fetching image:", error);
+  }
+};
 
 // ! Getting the city name and updating the forecastData
 const onSubmit = async (e) => {
@@ -50,6 +60,9 @@ const onSubmit = async (e) => {
       foreCastData.min = result.main.temp_min;
       foreCastData.feels_like = result.main.feels_like;
       foreCastData.clouds_type = result.weather[0].description;
+      foreCastData.icon = result.weather[0].icon
+
+      forecastContainer.style.display = "flex";
 
       forecastContainer.innerHTML = `
         <h2 class="title">${foreCastData.city_name}, ${foreCastData.city_country}</h2>
@@ -71,7 +84,7 @@ const onSubmit = async (e) => {
         </span>
         <div class="image-container">
             <h2>${foreCastData.clouds_type}</h2>
-            <span> clouds image </span>
+            <span> <img src="https://openweathermap.org/img/wn/${foreCastData.icon}@2x.png" alt="Meteo" /> </span>
         </div>
     `;
       errorScreen.style.display = "none";
@@ -95,7 +108,6 @@ const onLoad = () => {
     forecastContainer.style.display = "none";
     console.log(foreCastData);
   }
-
 };
 
 window.addEventListener("load", onLoad());
