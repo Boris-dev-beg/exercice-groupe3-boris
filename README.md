@@ -1,5 +1,5 @@
-## Description du contenu du depot et comment lancer chaque exercice
-# Description
+# Description du contenu du depot et comment lancer chaque exercice
+## Description
 - csv-analyser: C'est un code qui permet de :
     - lire un fichier csv avec le module csv de python
     - Determiner le chiffre d'affaire et le produit le plus en fonction des donnees contenues dans le fichier
@@ -27,11 +27,11 @@
     - JavaScript: Pour la recuperation des donnees, la gestion des ercans (erreurs, Pas de donnees trouvee, donnee trouver)
     - HTML/CSS: Pour l'affichage des donnees
 
-# Comment lancer
-Pour lancer: csv-manager, library-manager et mini-projet(scraper):
+## Comment lancer
+- Pour lancer: csv-manager, library-manager et mini-projet(scraper):
     - Il faut avoir python d'installer dans la machine 
     - Ce deplacer dans le dossier concerner et Taper la commande : "python main.py"
-     
-Pour lancer le mini-projet de scrapping, il faut:
+
+- Pour lancer le mini-projet de scrapping, il faut:
     - Installer les bibliotheques : requests et beautifulsoup4
     - Lancer la commande "python3 main.py" pour charger les donnees et les stockees dans le fichier "data.json" avant que le JS les recupere et les envoies au HTML.
